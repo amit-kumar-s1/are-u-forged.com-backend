@@ -11,6 +11,7 @@ pip install -r requirement.txt
 
 python -m uvicorn app.main:app --reload --port 8000
 
+.\cloudflared.exe tunnel --url http://127.0.0.1:8000    //for treating the local running backend as main backend
 
 ```
 ---
